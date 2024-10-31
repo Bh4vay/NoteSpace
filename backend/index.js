@@ -335,8 +335,8 @@ app.get(
   }
 );
 
-app.listen(8000, ()=>{
-    console.log("Server running at 8000.");
+app.listen(process.env.Port, ()=>{
+    console.log("Server running");
 });
 module.exports = app;
 
